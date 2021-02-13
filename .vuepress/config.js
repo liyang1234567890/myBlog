@@ -20,6 +20,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    // 博客配置
     "nav": [
       {
         "text": "首页",
@@ -30,16 +31,6 @@ module.exports = {
         "text": "时间线",
         "link": "/timeline/",
         "icon": "reco-date"
-      },
-      {
-        "text": "文档",
-        "icon": "reco-message",
-        "items": [
-          {
-            "text": "vuepress-reco",
-            "link": "/docs/theme-reco/"
-          }
-        ]
       },
       {
         "text": "联系",
@@ -92,8 +83,19 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "yangyangli",
     "authorAvatar": "/avatar.jpg",
-    "record": "xxxx",
-    "startYear": "2017"
+    "record": "洋洋李的博客",
+    "startYear": "2021",
+    "nextLinks": false,
+    "prevLinks": false,
+    "smoothScroll": true,
+    // 评论配置
+    "vssueConfig": {
+      "platform": 'github',
+      "owner": 'liyang1234567890',
+      "repo": 'myBlog',
+      "clientId": 'd43166926ff6cb6cd40c',
+      "clientSecret": '448e851c71ff5c87f58ca8793f6208dae21c3aaf'
+    }
   },
   "markdown": {
     "lineNumbers": true

@@ -5,6 +5,8 @@ tags:
  - 数组
 categories:
  -  数据结构
+sidebar: auto
+publish: true
 ---
 ---
 本文将会讲解数组常用的34个方法
