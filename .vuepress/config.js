@@ -87,17 +87,23 @@ module.exports = {
     "startYear": "2021",
     "nextLinks": false,
     "prevLinks": false,
-    "smoothScroll": true,
-    // 评论配置
-    "vssueConfig": {
-      "platform": 'github',
-      "owner": 'liyang1234567890',
-      "repo": 'myBlog',
-      "clientId": 'd43166926ff6cb6cd40c',
-      "clientSecret": '448e851c71ff5c87f58ca8793f6208dae21c3aaf'
-    }
+    "smoothScroll": true
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  "plugins": [
+    ['@vuepress-reco/comments', {
+      "solution": 'vssue',
+      "options": {
+        "title": 'vuepress-theme-reco',
+        "platform": 'github',
+        "owner": 'liyang1234567890',
+        "repo": 'myBlog',
+        "clientId": 'd43166926ff6cb6cd40c',
+        "clientSecret": '448e851c71ff5c87f58ca8793f6208dae21c3aaf'
+      }
+    }]
+  ],
+
 }
