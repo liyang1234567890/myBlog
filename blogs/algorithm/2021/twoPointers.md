@@ -25,7 +25,7 @@ publish: true
 单链表的特点是每个节点只知道下一个节点，所以一个指针的话无法判断链表中是否含有环的。
 单链表中不含环，那么指针最终会遇到空指针 null 表示链表到头了。
 
-```
+```js
 boolean hasCycle(ListNode head) {
     while (head != null)
         head = head.next;
@@ -36,7 +36,7 @@ boolean hasCycle(ListNode head) {
 
 所以判断链表中是否有环的经典方法是使用两个指针，一个跑得快，一个跑得慢。如果不含有环，跑得快的那个指针最终会遇到 null，说明链表不含环；如果含有环，快指针最终会超慢指针一圈，和慢指针相遇，说明链表含有环。
 
-```
+```js
 boolean hasCycle(ListNode head) {
     ListNode fast, slow;
     fast = slow = head;
@@ -59,7 +59,7 @@ boolean hasCycle(ListNode head) {
 
 这个问题一点都不困难，有点类似脑筋急转弯，先直接看代码：
 
-```
+```js
 ListNode detectCycle(ListNode head) {
     ListNode fast, slow;
     fast = slow = head;
@@ -101,7 +101,7 @@ ListNode detectCycle(ListNode head) {
 ### 3.寻找链表中中点
 类似上面的思路，我们还可以让快指针一次前进两步，慢指针一次前进一步，当快指针到达链表尽头时，慢指针就处于链表的中间位置。
 
-```
+```js
 ListNode findMid(ListNode head) {
     ListNode fast, slow;
     fast = slow = head;
@@ -131,7 +131,7 @@ ListNode findMid(ListNode head) {
 
 我们的思路还是使用快慢指针，让快指针先走 k 步，然后快慢指针开始同速前进。这样当快指针走到链表末尾 null 时，慢指针所在的位置就是倒数第 k 个链表节点（为了简化，假设 k 不会超过链表长度）：
 
-```
+```js
 ListNode backwardK(ListNode head) {
     ListNode slow, fast;
     slow = fast = head;
@@ -154,7 +154,7 @@ ListNode backwardK(ListNode head) {
 ### 1.二分查找
 
 这里只写最简单的二分算法，旨在突出它的双指针特性：
-```
+```js
 int binarySearch(int[] nums, int target) {
     int left = 0; 
     int right = nums.length - 1;
@@ -180,7 +180,7 @@ int binarySearch(int[] nums, int target) {
 
 只要数组有序，就应该想到双指针技巧。这道题的解法有点类似二分查找，通过调节 left 和 right 可以调整 sum 的大小：
 
-```
+```js
 int[] twoSum(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
     while (left < right) {
@@ -199,7 +199,7 @@ int[] twoSum(int[] nums, int target) {
 ```
 ---
 ### 3.反转数组
-```
+```js
 void reverse(int[] nums) {
     int left = 0;
     int right = nums.length - 1;
@@ -241,12 +241,12 @@ void reverse(int[] nums) {
 
 寻找回文串的问题核心思想是：从中间开始向两边扩散来判断回文串。对于最长回文子串，就是这个意思：
 
-```
+```js
 // 找到以 s[i] 为中心的回文串
 for 0 <= i < len(s):
 ```
 但是呢，我们刚才也说了，回文串的长度可能是奇数也可能是偶数，如果是 abba这种情况，没有一个中心字符，上面的算法就没辙了。所以我们可以修改一下：
-```
+```js
 // 找到以 s[i] 和 s[i+1] 为中心的回文串
 for 0 <= i < len(s):
 ```
@@ -254,7 +254,7 @@ for 0 <= i < len(s):
 **代码实现**
 
 按照上面的思路，先要实现一个函数来寻找最长回文串，这个函数是有点技巧的：
-```
+```js
 string palindrome(string& s, int l, int r) {
     // 防止索引越界
     while (l >= 0 && r < s.size()
@@ -267,7 +267,7 @@ string palindrome(string& s, int l, int r) {
 }
 ```
 为什么要传入两个指针 l 和 r 呢？因为这样实现可以同时处理回文串长度为奇数和偶数的情况：
-```
+```js
 for 0 <= i < len(s):
     # 找到以 s[i] 为中心的回文串
     palindrome(s, i, i)
@@ -276,7 +276,7 @@ for 0 <= i < len(s):
 ```
 下面看下 longestPalindrome 的完整代码：
 
-```
+```js
 string longestPalindrome(string s) {
     string res;
     for (int i = 0; i < s.size(); i++) {
