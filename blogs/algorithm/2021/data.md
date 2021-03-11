@@ -4,7 +4,7 @@ date: 2021-01-31 23:33:16
 tags:
  - 数据结构
 categories:
- -  数据结构
+ -  算法
 sidebar: auto
 publish: true
 ---
