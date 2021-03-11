@@ -293,10 +293,6 @@ string longestPalindrome(string s) {
 ```
 至此，这道最长回文子串的问题就解决了，时间复杂度 O(N^2)，空间复杂度 O(1)。
 
-值得一提的是，这个问题可以用动态规划方法解决，时间复杂度一样，但是空间复杂度至少要 O(N^2) 来存储 DP table。这道题是少有的动态规划非最优解法的问题。
-
-另外，这个问题还有一个巧妙的解法，时间复杂度只需要 O(N)，不过该解法比较复杂，我个人认为没必要掌握。该算法的名字叫 Manacher's Algorithm（马拉车算法），有兴趣的读者可以自行搜索一下。
-
 ---
 转载自 
 1. <a href="https://github.com/labuladong/fucking-algorithm/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4%E7%B3%BB%E5%88%97/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7.md">labuladong fucking-algorithm 双指针技巧</a>  
@@ -314,5 +310,3 @@ string longestPalindrome(string s) {
 一万年太久，只争朝夕，下次见
 
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f768074415b24e35b959c8cd57e6f33f~tplv-k3u1fbpfcp-watermark.image)
-
----
