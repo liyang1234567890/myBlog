@@ -1,19 +1,6 @@
 ---
-title: 34个数组方法
-date: 2021-10-09 03:35:55
-tags:
- - es6
-categories:
- - es6
-sidebar: auto
-publish: true
----
-![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fefffef1b0045889fc501761cae2dfe~tplv-k3u1fbpfcp-watermark.image)
-
-开淦!
----
 title: 常用的34个数组方法
-date: 2021-09-017 21:14:21
+date: 2021-09-17 21:14:21
 tags:
  - 数组
 categories:
@@ -21,6 +8,7 @@ categories:
 sidebar: auto
 publish: true
 ---
+
 ---
 本文将会讲解数组常用的34个方法
 * 我按照自己的关注点将这些方法分类（比如：sort()、reverse()和find()、findIndex()内部肯定也有遍历迭代的过程，但我这里将他们分别归类在排序和位置相关的类别中了）
