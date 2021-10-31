@@ -1,6 +1,18 @@
 ---
+title: let、var、const区别
+date: 2021-10-09 03:35:55
+tags:
+ - es6
+categories:
+ - es6
+sidebar: auto
+publish: true
+---
+![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0fefffef1b0045889fc501761cae2dfe~tplv-k3u1fbpfcp-watermark.image)
+开淦!
+---
 title: 常用的34个数组方法
-date: 2021-01-24 21:14:21
+date: 2021-09-017 21:14:21
 tags:
  - 数组
 categories:
